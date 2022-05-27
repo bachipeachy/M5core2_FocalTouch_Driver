@@ -1,0 +1,37 @@
+# The MIT License (MIT)
+#
+# Copyright (c) 2017 ladyada for adafruit industries
+# Software extensively modified/extended by bachipeachy@gmail.com
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+# THE SOFTWARE.
+
+"""
+The original software by Adafruit at
+https://github.com/adafruit/Adafruit_CircuitPython_FocalTouch/blob/main/adafruit_focaltouch.py
+is extensively modified/extended by bachipeachy@gmail.com to add additional features and
+tested exclusively on M5Stack Core 2 Hardware. Software may be adopted for other hardware.
+The enhanced features include:
+1) Support for swipe gestures -- 'LEFT', 'RIGHT', 'UP' and 'DOWN' in addition to
+2) Support for touch gestures -- "TAP" and "HELD" gestures for a single touch opeqrtion
+3) Support for tunable parameters for various gestures to address granularity and speed of response.
+
+Although, the FocalTouch FT-62XX advertizes support for multitouch, it seems, at least on
+M5Stack Core2 test hardware multi-touch (two finger gestures) does not work satisfatorily as a
+result multtouch gestures such as pinch, expand, rotate could not be implemented.
+The multitouch sensor seems to work correctly for changes in 'y' co-ordinates but did not responsd for 'x'.
+"""
